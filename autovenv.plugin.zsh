@@ -16,10 +16,8 @@ on_cd() {
         virtual_env_parent=$(dirname "$VIRTUAL_ENV")
         if [[ "$PWD" != "$virtual_env_parent"* ]]; then
             deactivate
-            find_and_activate_venv "$PWD"
         fi
-    else
-        find_and_activate_venv "$PWD"
     fi
+    find_and_activate_venv "$PWD"
 }
 chpwd_functions+=(on_cd)
