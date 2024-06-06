@@ -1,6 +1,6 @@
 find_and_activate_venv() {
     local dir="$1"
-    while [[ "$dir" != "/" && "$dir" != "$HOME" ]]; do
+    while [[ "$dir" != "/" && "$dir" != $(dirname "$HOME") ]]; do
         venv_activate="$dir/.venv/bin/activate"
         if [[ -f "$venv_activate" ]]; then
             source "$venv_activate"
