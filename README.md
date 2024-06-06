@@ -13,6 +13,10 @@ For [`ohmyzsh`](https://github.com/ohmyzsh/ohmyzsh), the installation is just:
 ```shell
 git clone https://github.com/denehoffman/autovenv.git ~/.oh-my-zsh/custom/plugins/autovenv
 ```
+Then, add `autovenv` to the pluggins array in your `.zshrc` file:
+```shell
+plugins=(... autovenv)
+```
 There's probably a similar method for other `zsh` plugin managers.
 
 # Future Plans
